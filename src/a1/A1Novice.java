@@ -31,7 +31,8 @@ public class A1Novice {
 		
 		
 		
-		// All of this original code did not work but may work for other problems
+		// All of this original code did not work but may work for other problems 
+		// (ie jedi)
 		// Class for items
 		/* public class Item {
 			String itemName; 
