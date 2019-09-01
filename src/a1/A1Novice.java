@@ -10,22 +10,46 @@ public class A1Novice {
 
 		// Your code follows here.
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		// All of this original code did not work but may work for other problems
 		// Class for items
-		class Item {
-			String itemName = scan.next();
-			int quantity = scan.nextInt();
-			double price = scan.nextDouble();			
+		/* public class Item {
+			String itemName; 
+			int quantity;
+			double price;	
+			
+			Item() {
+				this.itemName = scan.next();
+				this.quantity = scan.nextInt();
+				this.price = scan.nextDouble();
+			}
 		}
 		
 		// Class for customers
 		class Customer {
-			String firstName = scan.next();
-			String lastName = scan.next();
-			int count = scan.nextInt();
-			Item[] items = new Item[count];
+			String firstName;
+			String lastName;
+			int count;
+			Item[] items = [];
 			
-			for (i = 0, i < count, i++) {
-				Item[0] = new Item();
+			Customer() {
+				this.firstName = scan.next();
+				this.lastName = scan.next();
+				this.count = scan.nextInt();
+			}
+			
+			void createList() {
+				this.items = Items[count];
+				for (i = 0, i < count, i++) {
+					 Item[0] = new Item();
+				}
 			}
 		}
 		
@@ -33,8 +57,9 @@ public class A1Novice {
 		int customerCount = scan.nextInt();
 		
 		// creates correct number of customers and those customers
-		for (i = 0; i < customerCount; i++) {
+		for (int i = 0; i < customerCount; i++) {
 			Customer j = new Customer();
+			j.createList();
 			double total = 0.0;
 			int countItems = j.items.count();
 			// calculates total price for the customer
@@ -42,6 +67,6 @@ public class A1Novice {
 				total += j.items[x].quantity * j.items[x].price;
 			}
 			System.out.println(j.firstName[0] + ". " + j.lastName + ": "+ total);	 
-		}
+		} */
 	}
 } 
