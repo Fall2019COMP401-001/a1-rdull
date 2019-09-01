@@ -10,7 +10,20 @@ public class A1Novice {
 
 		// Your code follows here.
 		
-		
+		int customerCount = scan.nextInt();
+		for (int i = 0; i < customerCount ; i++) {
+			String firstName = scan.next();
+			String lastName = scan.next();
+			int itemCount = scan.nextInt();
+			double total = 0.0;
+			for (int j = 0; j < itemCount; j++) {
+				int quantity = scan.nextInt();
+				String itemName = scan.next();
+				double price = scan.nextDouble();
+				total += quantity * price;
+			}
+			System.out.println(firstName.charAt(0) + ". " + lastName + ": " + total);
+		}
 		
 		
 		
