@@ -27,7 +27,7 @@ public class A1Novice {
 				total += quantity * price;
 				
 			}
-			// Prints each customer's total cost
+			// Prints each customer's total cost with 2 decimal places
 			System.out.println(firstName.charAt(0) + ". " + lastName + ": " 
 			+ String.format("%.2f", total));
 		}
