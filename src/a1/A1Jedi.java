@@ -11,7 +11,7 @@ public class A1Jedi {
 		// Your code follows here.
 		int storeItemCount = scan.nextInt();
 		
-		// creates two empty arrays
+		// creates four empty arrays to be filled later
 		String[] iNames = new String[storeItemCount];
 		double[] iPrices = new double[storeItemCount];
 		int[] iCounts = new int[storeItemCount];
@@ -42,7 +42,8 @@ public class A1Jedi {
 				// for loop goes through each item
 				for (int k = 0; k < storeItemCount; k++) {
 							
-					// if statement finds price for item name given
+					// if statement adds amount of item purchased
+					// and one to the number of purchasers
 					if (itemName.equals(iNames[k])) {
 						iCounts[k] += quantity;
 						numberOfPurchasers[k] += 1; 
@@ -52,6 +53,7 @@ public class A1Jedi {
 			}
 		}
 		
+		// repeats the print statements for all items available at store
 		for (int i = 0; i < storeItemCount; i++) {
 			if (iCounts[i] == 0) {
 				System.out.println("No customers bought " + iNames[i]);
